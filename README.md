@@ -1,9 +1,10 @@
-# Dart with FFI vi ffigen
+# Dart with FFI via ffigen
 
 ## primitives-ffigen/
 
-I found no nice example using ffigen to generate FFI bindings for Dart.
-In particular https://github.com/dart-lang/samples/tree/master/ffi/primitives was confusing. While it worked, ffigen was not used to create the bindings. And once I used ffigen, the main program had to be modified (simplified) a bit.
+I found no nice example to generate FFI bindings with ffigen for Dart.
+In particular https://github.com/dart-lang/samples/tree/master/ffi/primitives was confusing: while it worked, the bindings were created manually and not via ffigen.
+I was curious why, so I tried to use ffigen instead to re-create those manual bindings. The main program had to be modified (simplified) a bit to make everything work, but in the end, it was much easier to understand and easier to maintain in case the C library will be updated.
 
 This repo is the result: It's basically the primitives example from above GitHub repo, but using ffigen.
 
@@ -21,4 +22,3 @@ This repo is the result: It's basically the primitives example from above GitHub
 3 - 5 = -2
 3 * 5 = 15
 ```
-
