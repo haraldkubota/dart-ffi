@@ -23,7 +23,7 @@ void main() {
         Directory.current.path, 'primitives_library', 'Debug', 'primtives.dll');
   }
 
-  final prlib = pr.NativeLibrary(ffi.DynamicLibrary.open(libraryPath));
+  final prlib = pr.Primitive(ffi.DynamicLibrary.open(libraryPath));
 
   // calls int sum(int a, int b);
   print('3 + 5 = ${prlib.sum(3, 5)}');
