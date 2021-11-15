@@ -20,6 +20,11 @@ int main()
     return 0;
 }
 
+int plusOne(int a)
+{
+    return a + 1;
+}
+
 int sum(int a, int b)
 {
     return a + b;

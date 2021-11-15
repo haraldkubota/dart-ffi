@@ -26,7 +26,8 @@ void main() {
   final prlib = pr.NativeLibrary(ffi.DynamicLibrary.open(libraryPath));
 
   // calls int sum(int a, int b);
-  print('3 + 5 = ${prlib.sum(3, 5)}');
+  int res = prlib.sum(3,5);
+  print('3 + 5 = ${res}');
 
   // calls int subtract(int *a, int b);
   // Create a pointer
