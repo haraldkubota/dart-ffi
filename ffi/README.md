@@ -12,6 +12,8 @@
 [ 50%] Built target primitives_test
 [100%] Built target primitives_library
 ❯ cd ..
+❯ dart pub get
+[...]
 ❯ dart run ffigen
 Running in Directory: '/home/harald/git/dart-ffi/ffi'
 [WARNING]: Prefer adding Key '[description]' to your config.
