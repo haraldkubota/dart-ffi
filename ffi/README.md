@@ -67,3 +67,6 @@ class Primitive {
 }
 ```
 plusOne() is defined to return an int and so is \_plusOne().
+
+Update: It's not a bug. See https://github.com/dart-lang/sdk/issues/47707
+
